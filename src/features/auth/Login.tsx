@@ -4,7 +4,7 @@ const Login:React.FC=()=> {
     
   return (
     <div>
-      Login Component
+      Login Component dyamic form comes here
     </div>
   )
 }
