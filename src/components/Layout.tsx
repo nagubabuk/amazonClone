@@ -6,7 +6,6 @@ function Layout() {
   return (
     <div>
     <Navbar/>
-      <h2>This is layout component</h2>
       <Outlet/>
       <Footer/>
     </div>

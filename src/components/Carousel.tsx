@@ -62,7 +62,7 @@ const Carousel: React.FC = () => {
         {imagesData.map((image, index) => (
           <div key={index}>
             <Link to={image.link}>
-              <img style={{ height: '50vh', width: '100vw'}} src={image.path} alt={image.info} />
+              <img style={{ height: '60vh', width: '100vw'}} src={image.path} alt={image.info} />
             </Link>
           </div>
         ))}
