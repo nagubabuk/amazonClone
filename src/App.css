@@ -1,4 +1,9 @@
+
 .App {
   text-align: center;
 }
 
+.slick-slide {
+  transform: translateZ(0);
+  /* Ensures hardware acceleration for smoother transitions */
+}

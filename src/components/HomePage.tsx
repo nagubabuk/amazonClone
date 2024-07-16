@@ -35,6 +35,9 @@ function HomePage() {
       <div style={{display:'flex',flexDirection:'row'}}>
         <HomeCards cardData={imagesData} header="Home appliances" />
         <HomeCards cardData={imagesData} header="Home appliances" />
+        <HomeCards cardData={imagesData} header="Home appliances" />
+        <HomeCards cardData={imagesData} header="Home appliances" />
+
         {/* <HomeCards cardData={imagesData} header="Home appliances" />
         <HomeCards cardData={imagesData} header="Home appliances" />
         <HomeCards cardData={imagesData} header="Home appliances" /> */}

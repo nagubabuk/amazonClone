@@ -49,9 +49,10 @@ const Carousel: React.FC = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    cssEase: 'ease-in-out',
     prevArrow: <CustomArrow direction="prev" />,
     nextArrow: <CustomArrow direction="next" />,
   };
