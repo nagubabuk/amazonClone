@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomeCards from "../commonComponents/HomeCards";
 
 const imagesData = [
@@ -32,16 +33,20 @@ const imagesData = [
 function HomePage() {
   return (
     <div>
+      <h1>Hellloooo</h1>
+      <div>
+        {/* <Link>create-product */}
+        <Link to={`/create-product`} className="card-link">
+            <div >
+              <button className="card-label">Create Product</button>
+            </div>
+          </Link>
+      </div>
       <div style={{display:'flex',flexDirection:'row'}}>
         <HomeCards cardData={imagesData} header="Home appliances" />
         <HomeCards cardData={imagesData} header="Home appliances" />
         <HomeCards cardData={imagesData} header="Home appliances" />
         <HomeCards cardData={imagesData} header="Home appliances" />
-
-        {/* <HomeCards cardData={imagesData} header="Home appliances" />
-        <HomeCards cardData={imagesData} header="Home appliances" />
-        <HomeCards cardData={imagesData} header="Home appliances" /> */}
-
       </div>
     </div>
   )
