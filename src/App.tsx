@@ -1,22 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom"
 import './App.css';
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Register from "./features/auth/Register";
 import ProductCreate from "./components/Admin/ProductCreate";
+import NavbarComponent from "./commonComponents/Navbar";
+import Footer from "./commonComponents/Footer";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="register" element={<Register />} />
-            <Route path="create-product" element={<ProductCreate />}/>
-          </Route>
-        </Routes>
-      </Router>
+      <NavbarComponent/>
+      <Outlet/>
+      <Footer/>
     </>
   );
 }

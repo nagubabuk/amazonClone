@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './utils/fontAwesome';
+import { RouterProvider } from 'react-router-dom';
+import routes from './routes/routes';
+
 
 
 const root = ReactDOM.createRoot(
@@ -14,7 +17,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={routes}/>
   </React.StrictMode>
 );
 

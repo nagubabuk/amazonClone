@@ -6,14 +6,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 // import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import narutoIcon from '../assets/images/naruto-119.svg'
 function NavbarComponent() {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/'); // Navigate to the home page
+  };
   return (
     <div>
       <Navbar expand="lg" style={{ backgroundColor: 'black',color:'white' }}>
         <Container fluid>
-          <Navbar.Brand href="#" style={{width:'120px'}}>
+          <Navbar.Brand onClick={handleLogoClick} style={{width:'120px'}}>
             <img src={narutoIcon} alt="Naruto Icon" style={{ width: '40px', height: '40px' }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -43,8 +49,8 @@ function NavbarComponent() {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#action2" style={{ color: 'white' }}>Link</Nav.Link>
-              <Nav.Link href="#" disabled style={{ color: 'white' }}>
-                Link
+              <Nav.Link href="#" className='px-3 py-1 rounded-full text-white bg-red-500 hover:bg-red-600' >
+                login
               </Nav.Link>
             </Nav>
             <div>

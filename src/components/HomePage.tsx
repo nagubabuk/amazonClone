@@ -33,7 +33,6 @@ const imagesData = [
 function HomePage() {
   return (
     <div>
-      <h1>Hellloooo</h1>
       <div>
         {/* <Link>create-product */}
         <Link to={`/create-product`} className="card-link">
